@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+background-color: #111111;
+scroll-behavior: smooth;
+}
+
+/* Blood effect animation */
+@keyframes bloodEffect {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+.animate-bloodEffect {
+  animation: bloodEffect 1s ease-in-out forwards;
+}
+
+.fgt{
+  mask-image: linear-gradient(to bottom , rgba(0,0,0,0.5), rgba(0,0,0,0.5) 60% ,transparent 100%);
+}
+
+.shadowcustom {
+  box-shadow: 0px 0px 0px rgba(234, 238, 3, 0.973);
+
+}
+
+.shadowcustom:hover {
+  box-shadow: 0px 0px 25px rgba(234, 238, 3, 0.973);
+}
+.scro{
+  scrollbar-width: none;
+}
